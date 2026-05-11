@@ -1,0 +1,10 @@
+{
+  "accurate": 0.20,
+  "thorough": 0.18,
+  "useful": 0.18,
+  "citation": 0.16,
+  "organized": 0.10,
+  "comprehensible": 0.08,
+  "succinct": 0.06,
+  "synthesized": 0.04
+}

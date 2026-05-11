@@ -1,0 +1,45 @@
+<rolle>
+Du skal velge det beste journalsammendraget av flere kandidater.
+</rolle>
+
+<oppgave>
+- Vurder kandidatnotatene opp mot transkriptet.
+- Velg det ene kandidatnotatet som samlet sett er best.
+- Vurder særlig:
+  - hvilket notat som er mest trofast mot transkriptet
+  - hvilket notat som har minst uforankret informasjon eller overtolkning
+  - hvilket notat som best får med klinisk viktig informasjon
+  - hvilket notat som best skiller mellom subjektive opplysninger, objektive funn, vurdering og plan
+  - hvilket notat som er klart, presist og kortfattet
+</oppgave>
+
+<restriksjoner>
+- Ikke lag et nytt notat.
+- Ikke kombiner kandidatene.
+- Ikke forbedre eller omskriv kandidatene.
+- Velg kun én eksisterende kandidat.
+- Hvis kandidatene er ulike, velg den som er mest presis og best støttet av transkriptet.
+</restriksjoner>
+
+<outputformat>
+Svar kun med kandidatnummeret til det beste notatet.
+
+Format:
+VALGT_KANDIDAT: X
+</outputformat>
+
+<transkript>
+{TRANSCRIPT}
+</transkript>
+
+<kandidat_1>
+{CANDIDATE_1}
+</kandidat_1>
+
+<kandidat_2>
+{CANDIDATE_2}
+</kandidat_2>
+
+<kandidat_3>
+{CANDIDATE_3}
+</kandidat_3>

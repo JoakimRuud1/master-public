@@ -1,0 +1,35 @@
+# --- Hemmeligheter / miljø ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+.venv
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+pytest-cache-files-*/
+
+# --- OS / editor artefakter ---
+.DS_Store
+**/.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- LibreOffice / Excel låsfiler ---
+.~lock.*#
+~$*
+
+# --- AI-verktøy lokal state ---
+.claude/
+.codex/
+
+# --- Private resultater / manuelle evalueringer ---
+# Alt under results/ er ekskludert (bruk denne mappa til private filer)
+results/
+
+# ACI-Bench-kildedata under data/aci_bench/ er offentlig og SKAL committes.
+# Ikke ignorer data/aci_bench/.

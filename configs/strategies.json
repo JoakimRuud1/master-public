@@ -1,0 +1,56 @@
+[
+  {
+    "id": "01_zero_shot_minimal_baseline",
+    "name": "Zero-shot minimal baseline",
+    "prompt_file": "prompts/01_zero_shot_minimal_baseline.txt",
+    "temperature": 0.0
+  },
+  {
+    "id": "02_zero_shot_structured_instruction",
+    "name": "Zero-shot structured instruction",
+    "prompt_file": "prompts/02_zero_shot_structured_instruction.txt",
+    "temperature": 0.0
+  },
+  {
+    "id": "03_one_shot",
+    "name": "One-shot",
+    "prompt_file": "prompts/03_one_shot.txt",
+    "temperature": 0.0
+  },
+  {
+    "id": "04_two_shot",
+    "name": "Two-shot",
+    "prompt_file": "prompts/04_two_shot.txt",
+    "temperature": 0.0
+  },
+  {
+    "id": "05_two_shot_decomposition",
+    "name": "Two-shot decomposition",
+    "prompt_file": "prompts/05_two_shot_decomposition.txt",
+    "temperature": 0.0
+  },
+  {
+    "id": "06_two_shot_self_criticism",
+    "name": "Two-shot self-criticism",
+    "prompt_file": "prompts/06_two_shot_self_criticism.txt",
+    "temperature": 0.0
+  },
+  {
+    "id": "07_two_shot_decomposition_self_criticism",
+    "name": "Two-shot decomposition self-criticism",
+    "prompt_file": "prompts/07_two_shot_decomposition_self_criticism.txt",
+    "temperature": 0.0
+  },
+  {
+    "id": "08_two_shot_decomposition_self_criticism_ensemble",
+    "name": "Two-shot decomposition self-criticism ensemble",
+    "prompt_file": "prompts/07_two_shot_decomposition_self_criticism.txt",
+    "temperature": 0.0,
+    "ensemble": {
+      "enabled": true,
+      "n": 3,
+      "candidate_prompt_file": "prompts/07_two_shot_decomposition_self_criticism.txt",
+      "selection_prompt_file": "prompts/08_two_shot_decomposition_self_criticism_ensemble.txt"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+Skriv et kort journalsammendrag av legevaktkonsultasjonen nedenfor på norsk.
+
+Bruk SOAP-struktur:
+S - Subjektive opplysninger
+O - Objektive opplysninger
+A - Vurdering
+P - Plan
+
+Transkript:
+{TRANSCRIPT}

@@ -1,0 +1,16 @@
+{
+  "generator": {
+    "api_endpoint": "responses",
+    "model": "gpt-5.4",
+    "max_output_tokens": 1500,
+    "temperature": 0.0,
+    "reasoning_effort": null
+  },
+  "judge": {
+    "api_endpoint": "responses",
+    "model": "gpt-5.4",
+    "max_output_tokens": 16000,
+    "temperature": 0.0,
+    "reasoning_effort": "high"
+  }
+}
