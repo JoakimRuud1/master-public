@@ -38,7 +38,7 @@ Dette er den offentlige delen av kodebasen. Det dekker:
 - **Generering** av sammendrag med valgt strategi (`src/run_generate.py`).
 - **Automatisk evaluering** med LLM-as-judge mot et kriteriesett tilpasset fra
   PDSQI-9 (`src/run_judge.py`, `src/judge_*.py`).
-- **Analyse**: MCDA, deskriptiv sammenligning, plotting, og sammenligning mot
+- **Analyse**: deskriptiv sammenligning, plotting og sammenligning mot
   manuell scoring (`src/plot_results.py`, `src/report_results.py`,
   `src/compare_judge_manual.py`).
 - **Datagrunnlag**: ACI-Bench under `data/aci_bench/` brukes som offentlig
