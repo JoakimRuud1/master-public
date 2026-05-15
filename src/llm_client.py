@@ -27,8 +27,18 @@ def _load_dotenv_if_available() -> None:
 
 _load_dotenv_if_available()
 
-# OPENAI_API_KEY should be set in environment (or .env loaded above).
-_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+_client: Optional[OpenAI] = None
+
+
+def _get_client() -> OpenAI:
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        raise RuntimeError("OPENAI_API_KEY is not set (check .env or environment variables).")
+
+    global _client
+    if _client is None:
+        _client = OpenAI(api_key=api_key)
+    return _client
 
 
 def _extract_retry_after(exc: Exception) -> Optional[float]:
@@ -87,8 +97,7 @@ def generate_text(
     - retries: total number of attempts on retryable errors
     - retry_backoff_s: base backoff; exponential with jitter, honors Retry-After
     """
-    if not os.getenv("OPENAI_API_KEY"):
-        raise RuntimeError("OPENAI_API_KEY is not set (check .env or environment variables).")
+    client = _get_client()
     if api_endpoint != "responses":
         raise ValueError(f"Unsupported api_endpoint: {api_endpoint}. Only 'responses' is implemented.")
 
@@ -112,7 +121,7 @@ def generate_text(
             if reasoning_effort is not None:
                 req["reasoning"] = {"effort": reasoning_effort}
 
-            resp = _client.responses.create(**req)
+            resp = client.responses.create(**req)
             text = (resp.output_text or "").strip()
             if not text:
                 raise RuntimeError("Model returned empty output_text.")

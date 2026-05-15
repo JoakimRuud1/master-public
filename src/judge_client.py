@@ -42,7 +42,18 @@ def _load_dotenv_if_available() -> None:
 
 _load_dotenv_if_available()
 
-_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+_client: Optional[OpenAI] = None
+
+
+def _get_client() -> OpenAI:
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        raise RuntimeError("OPENAI_API_KEY is not set.")
+
+    global _client
+    if _client is None:
+        _client = OpenAI(api_key=api_key)
+    return _client
 
 RAW_RESPONSE_ALLOWED_KEYS = set(SCORE_KEYS) | {"rationale"}
 RAW_RESPONSE_FORBIDDEN_KEYS = {
@@ -306,8 +317,7 @@ def judge_summary(
       voice_analysis:{...}, rationale:str
     }
     """
-    if not os.getenv("OPENAI_API_KEY"):
-        raise RuntimeError("OPENAI_API_KEY is not set.")
+    client = _get_client()
     if api_endpoint != "responses":
         raise ValueError(f"Unsupported api_endpoint: {api_endpoint}. Only 'responses' is implemented.")
 
@@ -378,7 +388,7 @@ RAW RESPONSE JSON SCHEMA (fill values, keep keys exactly):
             elif temperature is not None:
                 req["temperature"] = float(temperature)
 
-            resp = _client.responses.create(**req)
+            resp = client.responses.create(**req)
             raw = (resp.output_text or "").strip()
             last_raw_response = raw
             if not raw:

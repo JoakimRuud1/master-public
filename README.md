@@ -1,6 +1,6 @@
 # Master — Promptstrategier for KI-genererte kliniske sammendrag
 
-Kode, prompter og analyseverktøy for masteroppgaven
+Kode, prompter, datautvalg og analyseverktøy for masteroppgaven
 
 > **Hvordan instruksjons- og promptstrategier påvirker kvaliteten på
 > KI-genererte journalsammendrag i klinisk kontekst**
@@ -38,12 +38,20 @@ Dette er den offentlige delen av kodebasen. Det dekker:
 - **Generering** av sammendrag med valgt strategi (`src/run_generate.py`).
 - **Automatisk evaluering** med LLM-as-judge mot et kriteriesett tilpasset fra
   PDSQI-9 (`src/run_judge.py`, `src/judge_*.py`).
-- **Analyse**: deskriptiv sammenligning, plotting og sammenligning mot
-  manuell scoring (`src/plot_results.py`, `src/report_results.py`,
-  `src/compare_judge_manual.py`).
+- **Analyse**: deskriptiv sammenligning, plotting, sammenslåing av kjøringer,
+  feilanalyse og sammenligning mot manuell scoring (`src/plot_results.py`,
+  `src/report_results.py`, `src/compare_judge_manual.py`,
+  `src/pool_test_runs.py`, `src/explore_results.py`,
+  `src/extract_hallucination_candidates.py`).
 - **Datagrunnlag**: ACI-Bench under `data/aci_bench/` brukes som offentlig
-  proxy for kliniske samtaler. Manuelle ekspertvurderinger og resultater fra
+  proxy for kliniske samtaler. Private manuelle vurderinger og resultater fra
   den lokale plausibilitetstesten på Helseetaten-data inngår ikke i repoet.
+- **Manuelle vedlegg**: de to Excel-filene i rotmappen er offentlige vedlegg
+  brukt til manuell evaluering og dommerkontroll i oppgaven.
+
+Repoet inneholder ikke genererte `runs/`-mapper, resultatmapper eller ferdige
+plott fra analysen. Slike artefakter kan regenereres med skriptene over dersom
+man har nødvendige API-nøkler og modelltilgang.
 
 ## Setup
 
@@ -56,11 +64,11 @@ Dette er den offentlige delen av kodebasen. Det dekker:
    pip install -r requirements.txt
    ```
 
-2. Lag en `.env` i prosjektroten med API-nøklene dine:
+2. Lag en `.env` i prosjektroten med API-nøkkelen din, eventuelt ved å kopiere
+   `.env.example`:
 
    ```text
    OPENAI_API_KEY=sk-...
-   ANTHROPIC_API_KEY=sk-ant-...
    ```
 
    `.env` er git-ignorert og skal aldri committes.
@@ -99,6 +107,14 @@ og er ekskludert fra evaluering:
 train:aci_asrcorr:0-aci
 train:aci_asrcorr:1-aci
 ```
+
+ACI-Bench beskrives i artikkelen
+[ACI-BENCH: a Novel Ambient Clinical Intelligence Dataset for Benchmarking
+Automatic Visit Note Generation](https://www.nature.com/articles/s41597-023-02487-3).
+Datasettet er publisert under Creative Commons Attribution 4.0 International
+License (CC BY 4.0). Se
+[ACI-Bench-repoet](https://github.com/wyim/aci-bench) for original lisens og
+siteringsinformasjon.
 
 ## Typisk bruk
 
@@ -149,8 +165,15 @@ par logges til `summaries_errors.jsonl` og regenereres ved neste resume.
 python src/compare_judge_manual.py --run-dir runs/<run_id> --manual path/to/manual_scoring.csv
 ```
 
-Manuelle scoringsfiler holdes private under `results/` og er ikke del av
-dette repoet.
+De to Excel-filene i rotmappen er offentlige manuelle vedlegg:
+
+```text
+manual_evaluation_2samtaler_tilbakemeldinger.xlsx
+manuell_dommeranalyse_5samtaler.xlsx
+```
+
+Øvrige private resultater, lokale kjøringer og manuelle arbeidsfiler holdes
+utenfor repoet, for eksempel under `results/`.
 
 ## Forfattere
 
@@ -163,5 +186,7 @@ Koden i dette repoet er lisensiert under [MIT License](LICENSE). MIT er valgt
 fordi den er den vanligste lisensen for åpen forskningskode og legger få
 restriksjoner på gjenbruk i videre arbeid.
 
-ACI-Bench-datasettet under `data/aci_bench/` har sin egen lisens; se
-[ACI-Bench-repoet](https://github.com/wyim/aci-bench) for kildens egne vilkår.
+ACI-Bench-datasettet under `data/aci_bench/` er ikke lisensiert under repoets
+MIT-lisens. Det følger kildens egen CC BY 4.0-lisens; se
+[ACI-Bench-repoet](https://github.com/wyim/aci-bench) for vilkår og
+siteringsinformasjon.
