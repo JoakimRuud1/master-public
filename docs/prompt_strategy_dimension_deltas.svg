@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="610" viewBox="0 0 1220 610">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#1f2933">
+<text x="24" y="36" font-size="23" font-weight="700">Prompt strategy performance by evaluation dimension</text>
+<text x="24" y="63" font-size="15" fill="#52606d">Mean score difference from the minimal baseline (1-5 scale)</text>
+<text x="389.0" y="88" text-anchor="middle" font-size="13" font-weight="600">Source</text>
+<text x="389.0" y="105" text-anchor="middle" font-size="13" font-weight="600">grounding</text>
+<text x="507.0" y="98" text-anchor="middle" font-size="13" font-weight="600">Accuracy</text>
+<text x="625.0" y="98" text-anchor="middle" font-size="13" font-weight="600">Thoroughness</text>
+<text x="743.0" y="98" text-anchor="middle" font-size="13" font-weight="600">Usefulness</text>
+<text x="861.0" y="98" text-anchor="middle" font-size="13" font-weight="600">Organization</text>
+<text x="979.0" y="98" text-anchor="middle" font-size="13" font-weight="600">Comprehensibility</text>
+<text x="1097.0" y="98" text-anchor="middle" font-size="13" font-weight="600">Succinctness</text>
+<text x="316" y="153" text-anchor="end" font-size="14">01 Minimal baseline</text>
+<rect x="330" y="120" width="116" height="50" fill="#f7f7f7" rx="2"/>
+<text x="388.0" y="152" text-anchor="middle" font-size="14" font-weight="600">0.00</text>
+<rect x="448" y="120" width="116" height="50" fill="#f7f7f7" rx="2"/>
+<text x="506.0" y="152" text-anchor="middle" font-size="14" font-weight="600">0.00</text>
+<rect x="566" y="120" width="116" height="50" fill="#f7f7f7" rx="2"/>
+<text x="624.0" y="152" text-anchor="middle" font-size="14" font-weight="600">0.00</text>
+<rect x="684" y="120" width="116" height="50" fill="#f7f7f7" rx="2"/>
+<text x="742.0" y="152" text-anchor="middle" font-size="14" font-weight="600">0.00</text>
+<rect x="802" y="120" width="116" height="50" fill="#f7f7f7" rx="2"/>
+<text x="860.0" y="152" text-anchor="middle" font-size="14" font-weight="600">0.00</text>
+<rect x="920" y="120" width="116" height="50" fill="#f7f7f7" rx="2"/>
+<text x="978.0" y="152" text-anchor="middle" font-size="14" font-weight="600">0.00</text>
+<rect x="1038" y="120" width="116" height="50" fill="#f7f7f7" rx="2"/>
+<text x="1096.0" y="152" text-anchor="middle" font-size="14" font-weight="600">0.00</text>
+<text x="316" y="205" text-anchor="end" font-size="14">02 Structured zero-shot</text>
+<rect x="330" y="172" width="116" height="50" fill="#7fae9f" rx="2"/>
+<text x="388.0" y="204" text-anchor="middle" font-size="14" font-weight="600">+0.27</text>
+<rect x="448" y="172" width="116" height="50" fill="#c6d9d3" rx="2"/>
+<text x="506.0" y="204" text-anchor="middle" font-size="14" font-weight="600">+0.11</text>
+<rect x="566" y="172" width="116" height="50" fill="#9ec1b6" rx="2"/>
+<text x="624.0" y="204" text-anchor="middle" font-size="14" font-weight="600">+0.20</text>
+<rect x="684" y="172" width="116" height="50" fill="#cfdfda" rx="2"/>
+<text x="742.0" y="204" text-anchor="middle" font-size="14" font-weight="600">+0.09</text>
+<rect x="802" y="172" width="116" height="50" fill="#f7f7f7" rx="2"/>
+<text x="860.0" y="204" text-anchor="middle" font-size="14" font-weight="600">0.00</text>
+<rect x="920" y="172" width="116" height="50" fill="#f4f0f0" rx="2"/>
+<text x="978.0" y="204" text-anchor="middle" font-size="14" font-weight="600">-0.02</text>
+<rect x="1038" y="172" width="116" height="50" fill="#ecd6d6" rx="2"/>
+<text x="1096.0" y="204" text-anchor="middle" font-size="14" font-weight="600">-0.09</text>
+<text x="316" y="257" text-anchor="end" font-size="14">03 One-shot</text>
+<rect x="330" y="224" width="116" height="50" fill="#95bbb0" rx="2"/>
+<text x="388.0" y="256" text-anchor="middle" font-size="14" font-weight="600">+0.22</text>
+<rect x="448" y="224" width="116" height="50" fill="#b4cec6" rx="2"/>
+<text x="506.0" y="256" text-anchor="middle" font-size="14" font-weight="600">+0.15</text>
+<rect x="566" y="224" width="116" height="50" fill="#b9d1ca" rx="2"/>
+<text x="624.0" y="256" text-anchor="middle" font-size="14" font-weight="600">+0.14</text>
+<rect x="684" y="224" width="116" height="50" fill="#d3e1dd" rx="2"/>
+<text x="742.0" y="256" text-anchor="middle" font-size="14" font-weight="600">+0.08</text>
+<rect x="802" y="224" width="116" height="50" fill="#f7f7f7" rx="2"/>
+<text x="860.0" y="256" text-anchor="middle" font-size="14" font-weight="600">0.00</text>
+<rect x="920" y="224" width="116" height="50" fill="#edd9d9" rx="2"/>
+<text x="978.0" y="256" text-anchor="middle" font-size="14" font-weight="600">-0.08</text>
+<rect x="1038" y="224" width="116" height="50" fill="#f2e8e8" rx="2"/>
+<text x="1096.0" y="256" text-anchor="middle" font-size="14" font-weight="600">-0.04</text>
+<text x="316" y="309" text-anchor="end" font-size="14">04 Two-shot</text>
+<rect x="330" y="276" width="116" height="50" fill="#579582" rx="2"/>
+<text x="388.0" y="308" text-anchor="middle" font-size="14" font-weight="600">+0.36</text>
+<rect x="448" y="276" width="116" height="50" fill="#b4cec6" rx="2"/>
+<text x="506.0" y="308" text-anchor="middle" font-size="14" font-weight="600">+0.15</text>
+<rect x="566" y="276" width="116" height="50" fill="#b4cec6" rx="2"/>
+<text x="624.0" y="308" text-anchor="middle" font-size="14" font-weight="600">+0.15</text>
+<rect x="684" y="276" width="116" height="50" fill="#c6d9d3" rx="2"/>
+<text x="742.0" y="308" text-anchor="middle" font-size="14" font-weight="600">+0.11</text>
+<rect x="802" y="276" width="116" height="50" fill="#f7f7f7" rx="2"/>
+<text x="860.0" y="308" text-anchor="middle" font-size="14" font-weight="600">0.00</text>
+<rect x="920" y="276" width="116" height="50" fill="#efe1e1" rx="2"/>
+<text x="978.0" y="308" text-anchor="middle" font-size="14" font-weight="600">-0.06</text>
+<rect x="1038" y="276" width="116" height="50" fill="#f3ecec" rx="2"/>
+<text x="1096.0" y="308" text-anchor="middle" font-size="14" font-weight="600">-0.03</text>
+<text x="316" y="361" text-anchor="end" font-size="14">05 Two-shot + decomposition</text>
+<rect x="330" y="328" width="116" height="50" fill="#7bab9c" rx="2"/>
+<text x="388.0" y="360" text-anchor="middle" font-size="14" font-weight="600">+0.28</text>
+<rect x="448" y="328" width="116" height="50" fill="#b4cec6" rx="2"/>
+<text x="506.0" y="360" text-anchor="middle" font-size="14" font-weight="600">+0.15</text>
+<rect x="566" y="328" width="116" height="50" fill="#c2d6d0" rx="2"/>
+<text x="624.0" y="360" text-anchor="middle" font-size="14" font-weight="600">+0.12</text>
+<rect x="684" y="328" width="116" height="50" fill="#cfdfda" rx="2"/>
+<text x="742.0" y="360" text-anchor="middle" font-size="14" font-weight="600">+0.09</text>
+<rect x="802" y="328" width="116" height="50" fill="#f3ecec" rx="2"/>
+<text x="860.0" y="360" text-anchor="middle" font-size="14" font-weight="600">-0.03</text>
+<rect x="920" y="328" width="116" height="50" fill="#f7f7f7" rx="2"/>
+<text x="978.0" y="360" text-anchor="middle" font-size="14" font-weight="600">0.00</text>
+<rect x="1038" y="328" width="116" height="50" fill="#f3ecec" rx="2"/>
+<text x="1096.0" y="360" text-anchor="middle" font-size="14" font-weight="600">-0.03</text>
+<text x="316" y="413" text-anchor="end" font-size="14">06 Two-shot + self-criticism</text>
+<rect x="330" y="380" width="116" height="50" fill="#8cb6a9" rx="2"/>
+<text x="388.0" y="412" text-anchor="middle" font-size="14" font-weight="600">+0.24</text>
+<rect x="448" y="380" width="116" height="50" fill="#c6d9d3" rx="2"/>
+<text x="506.0" y="412" text-anchor="middle" font-size="14" font-weight="600">+0.11</text>
+<rect x="566" y="380" width="116" height="50" fill="#c2d6d0" rx="2"/>
+<text x="624.0" y="412" text-anchor="middle" font-size="14" font-weight="600">+0.12</text>
+<rect x="684" y="380" width="116" height="50" fill="#c6d9d3" rx="2"/>
+<text x="742.0" y="412" text-anchor="middle" font-size="14" font-weight="600">+0.11</text>
+<rect x="802" y="380" width="116" height="50" fill="#f4f0f0" rx="2"/>
+<text x="860.0" y="412" text-anchor="middle" font-size="14" font-weight="600">-0.02</text>
+<rect x="920" y="380" width="116" height="50" fill="#edd9d9" rx="2"/>
+<text x="978.0" y="412" text-anchor="middle" font-size="14" font-weight="600">-0.08</text>
+<rect x="1038" y="380" width="116" height="50" fill="#eedddd" rx="2"/>
+<text x="1096.0" y="412" text-anchor="middle" font-size="14" font-weight="600">-0.07</text>
+<text x="316" y="465" text-anchor="end" font-size="14">07 Decomposition + self-criticism</text>
+<rect x="330" y="432" width="116" height="50" fill="#53937f" rx="2"/>
+<text x="388.0" y="464" text-anchor="middle" font-size="14" font-weight="600">+0.37</text>
+<rect x="448" y="432" width="116" height="50" fill="#7bab9c" rx="2"/>
+<text x="506.0" y="464" text-anchor="middle" font-size="14" font-weight="600">+0.28</text>
+<rect x="566" y="432" width="116" height="50" fill="#dce7e4" rx="2"/>
+<text x="624.0" y="464" text-anchor="middle" font-size="14" font-weight="600">+0.06</text>
+<rect x="684" y="432" width="116" height="50" fill="#c6d9d3" rx="2"/>
+<text x="742.0" y="464" text-anchor="middle" font-size="14" font-weight="600">+0.11</text>
+<rect x="802" y="432" width="116" height="50" fill="#f4f0f0" rx="2"/>
+<text x="860.0" y="464" text-anchor="middle" font-size="14" font-weight="600">-0.02</text>
+<rect x="920" y="432" width="116" height="50" fill="#f1e4e4" rx="2"/>
+<text x="978.0" y="464" text-anchor="middle" font-size="14" font-weight="600">-0.05</text>
+<rect x="1038" y="432" width="116" height="50" fill="#f3ecec" rx="2"/>
+<text x="1096.0" y="464" text-anchor="middle" font-size="14" font-weight="600">-0.03</text>
+<text x="316" y="517" text-anchor="end" font-size="14">08 Ensemble</text>
+<rect x="330" y="484" width="116" height="50" fill="#38826b" rx="2"/>
+<text x="388.0" y="516" text-anchor="middle" font-size="14" font-weight="600">+0.43</text>
+<rect x="448" y="484" width="116" height="50" fill="#7bab9c" rx="2"/>
+<text x="506.0" y="516" text-anchor="middle" font-size="14" font-weight="600">+0.28</text>
+<rect x="566" y="484" width="116" height="50" fill="#c6d9d3" rx="2"/>
+<text x="624.0" y="516" text-anchor="middle" font-size="14" font-weight="600">+0.11</text>
+<rect x="684" y="484" width="116" height="50" fill="#cfdfda" rx="2"/>
+<text x="742.0" y="516" text-anchor="middle" font-size="14" font-weight="600">+0.09</text>
+<rect x="802" y="484" width="116" height="50" fill="#f7f7f7" rx="2"/>
+<text x="860.0" y="516" text-anchor="middle" font-size="14" font-weight="600">0.00</text>
+<rect x="920" y="484" width="116" height="50" fill="#f3ecec" rx="2"/>
+<text x="978.0" y="516" text-anchor="middle" font-size="14" font-weight="600">-0.03</text>
+<rect x="1038" y="484" width="116" height="50" fill="#eef2f1" rx="2"/>
+<text x="1096.0" y="516" text-anchor="middle" font-size="14" font-weight="600">+0.02</text>
+<text x="330" y="581" font-size="13" fill="#52606d">Color scale:</text>
+<rect x="422" y="564" width="26" height="20" fill="#c46363" rx="2"/>
+<text x="456" y="580" font-size="12" fill="#52606d">-0.40</text>
+<rect x="514" y="564" width="26" height="20" fill="#f7f7f7" rx="2"/>
+<text x="548" y="580" font-size="12" fill="#52606d">0.00</text>
+<rect x="606" y="564" width="26" height="20" fill="#458b75" rx="2"/>
+<text x="640" y="580" font-size="12" fill="#52606d">+0.40</text>
+</g>
+</svg>
