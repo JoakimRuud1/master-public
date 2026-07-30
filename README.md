@@ -5,7 +5,7 @@ master's thesis in Industrial Economics at the Norwegian University of Life
 Sciences (NMBU), completed in spring 2026 by Rajvir Singh Aujla and Joakim Otto
 Ruud.
 
-## TL;DR
+## Summary
 
 We generated 528 clinical summaries from 66 simulated ACI-Bench consultations
 and compared eight prompt strategies across seven quality dimensions. The
